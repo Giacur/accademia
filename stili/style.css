@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Playfair+Display+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, a {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    line-height: 6rem;
+}
+
+h2, h3, h4 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+i {
+    transition: 500ms;
+}
+
+#i-speciali:hover {
+    cursor: pointer;
+    color: white;
+    transform: rotateZ(360deg);
+}
+
+.prima-foto {
+    height: 60vh;
+    background-image: url(../img/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.velina {
+    background-color: rgba(255, 47, 0, 0.45);
+}
+
+
+#uno {
+    background-color: rgb(2, 2, 91);
+    padding: 4%;
+}
+
+#uno h2 {
+    font-size: 10rem;
+}
+
+#due h2 {
+    font-size: 10rem;
+}
+
+.bottone {
+    text-decoration: none;
+    color: white;
+    border: 1px solid orangered;
+    background-color: orangered;
+    height: 15%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottone-piccolo {
+    text-decoration: none;
+    color: white;
+    border: 1px solid orangered;
+    background-color: orangered;
+    height: 15%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottone-nero {
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    height: 10%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-orange-red {
+    background-color: rgb(255, 42, 0);
+}
+
+.text-orange-red {
+    color: rgb(255, 42, 0);
+}
+
+.bg-cyan {
+    background-color: cyan;
+}
+.foto-tre {
+    background-image: url(../img/foto3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.velina-nera {
+    background-color: rgba(0, 0, 0, 0.708);
+    height: 100%;
+    width: 100%;
+}
+
+.foto-quattro {
+    background-image: url(../img/foto4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-cinque {
+    background-image: url(../img/foto5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+.bg-blu {
+    background-color: rgb(2, 2, 91);
+}
+
+.foto-dieci {
+    background-image: url(../img/foto10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-undici {
+    background-image: url(../img/foto11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cinq {
+    height: 40vh;
+}
+
+footer {
+    background-color: rgb(36, 36, 36);
+    height: 10vh;
+}
+
+
+.text-footer {
+    font-size: 0.7rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
