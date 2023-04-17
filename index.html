@@ -19,8 +19,24 @@
                     <div class="col-12 col-xxl-6 d-flex flex-column justify-content-end h-100 px-1">
                         <h2 class="py-3">Panoramica</h2>
                         <h1 class="py-3">Accademici d'arte</h1>
-                        <p class="mb-5">
-                            I nostri programmi accademici supportano professionisti creativi che lottano per un mondo che sia più luminoso, più inclusivo, inesorabilmente innovativo ed ecologicamente resistente.
+                        <p class="mb-5" id="campo">
+                            <script>
+                                let testo = "I nostri programmi accademici supportano professionisti creativi che lottano per un mondo che sia più luminoso, più inclusivo, inesorabilmente innovativo ed ecologicamente resistente.";
+
+                                let campo = document.getElementById("campo");
+                                let speed = 30;
+                                i = 0;
+
+                                function scrivi() {
+                                    if(i < testo.length) {
+                                        campo.innerHTML += testo.charAt(i);
+                                        i++;
+                                        setTimeout(scrivi, speed);
+                                    }
+                                }
+                                scrivi();
+
+                            </script>
                         </p>
                     </div>
                     <div class="d-none col-xxl-6"></div>
@@ -40,26 +56,8 @@
             <div class="col-12 col-xxl-8 d-xxl-flex flex-column justify-content-around align-items-start p-5">
                 <h4 class="text-uppercase">riguardo a noi</h4>
                 <h2>Immergiti nella nostra cultura creativa</h2>
-                <p id="campo">
-                    <script>
-                        let testo = "Persegui le tue passioni al California College of the Arts, dove pratiche diverse si incontrano e l'ispirazione è ad ogni svolta. Con l'accesso alle comunità creative e alle industrie fiorenti della Bay Area, parteciperai a eventi entusiasmanti collaborazioni, approfondisci la tua pratica e impara dai leader dell'arte e del design, inclusa la nostra rinomata facoltà.";
-
-                        let testodue = "Collega la speculazione teorica e l'innovazione dei materiali con metodi di progettazione sperimentale nei nostri quattro programmi accademici e cinque laboratori di ricerca.";
-
-                        let campo = document.getElementById("campo");
-                        let speed = 7;
-                        i = 0;
-
-                        function scrivi() {
-                            if(i < testo.length) {
-                                campo.innerHTML += testo.charAt(i);
-                                i++;
-                                setTimeout(scrivi, speed);
-                            }
-                        }
-
-                        scrivi();
-                    </script>
+                <p>
+                    Persegui le tue passioni al California College of the Arts, dove pratiche diverse si incontrano e l'ispirazione è ad ogni svolta. Con l'accesso alle comunità creative e alle industrie fiorenti della Bay Area, parteciperai a eventi entusiasmanti collaborazioni, approfondisci la tua pratica e impara dai leader dell'arte e del design, inclusa la nostra rinomata facoltà.
                 </p>
 
                 <button type="button" class="btn btn-danger btn-lg">Leggi di più</button>
@@ -77,23 +75,8 @@
             <div class="col-xxl-6 d-flex flex-column justify-content-around p-5 bg-orange-red">
                 <h4 class="text-uppercase">Discipline fondamentali</h4>
                 <h2 class="bg-cyan w-xxl-50 text-black px-2">Architettura</h2>
-                <p id="campodue">
-                    <script>
-                        let testoDue = "Collega la speculazione teorica e l'innovazione dei materiali con metodi di progettazione sperimentale nei nostri quattro programmi accademici e cinque laboratori di ricerca.";
-
-                        let secondoCampo = document.getElementById("campodue");
-                        l = 0;
-
-                        function scriviDue() {
-                            if(l < testoDue.length) {
-                                secondoCampo.innerHTML += testoDue.charAt(l);
-                                l++;
-                                setTimeout(scriviDue, speed);
-                            }
-                        }
-
-                        scriviDue();
-                    </script>
+                <p>
+                    Collega la speculazione teorica e l'innovazione dei materiali con metodi di progettazione sperimentale nei nostri quattro programmi accademici e cinque laboratori di ricerca.
                 </p>
                 <i class="fa-sharp fa-solid fa-right-long fa-2x"></i>
             </div>
